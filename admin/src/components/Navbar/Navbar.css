@@ -1,14 +1,89 @@
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 4%;
+:root {
+  --green-primary: #27ae60;
+  --green-secondary: #2ecc71;
+  --green-accent: #4caf50;
+  --green-shadow: rgba(39, 174, 96, 0.25);
+  --gray-dark: #2c3e50;
+  --gray-light: #7f8c8d;
+  --transition-speed: 0.35s;
+  --border-radius: 24px;
+  --font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 6%;
+  background: linear-gradient(135deg, #e6f5e6 0%, #d7f0d7 100%);
+  box-shadow: 0 4px 18px var(--green-shadow);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  font-family: var(--font-family);
+  user-select: none;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: saturate(150%) blur(8px);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar:hover {
+  background: linear-gradient(135deg, #ccedcc 0%, #b8e4b8 100%);
+  box-shadow: 0 6px 25px rgba(46, 204, 113, 0.4);
 }
 
 .navbar .logo {
-    width: max(10%, 80px);
+  width: max(7%, 90px);
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px var(--green-primary));
+  transition: transform var(--transition-speed) ease, filter var(--transition-speed) ease;
 }
 
-.navbar .profile{
-    width: 40px;
+.navbar .logo:hover {
+  transform: scale(1.18) rotate(-4deg) translateY(-3px);
+  filter: drop-shadow(0 0 12px var(--green-secondary));
+}
+
+.navbar .profile {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  object-fit: cover;
+  box-shadow: 0 2px 8px var(--green-shadow);
+  transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.navbar .profile:hover {
+  border-color: var(--green-accent);
+  box-shadow: 0 0 15px var(--green-secondary);
+  transform: scale(1.08);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 5%;
+  }
+  .navbar .logo {
+    width: max(10%, 70px);
+  }
+  .navbar .profile {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 4%;
+  }
+  .navbar .logo {
+    width: 56px;
+  }
+  .navbar .profile {
+    width: 36px;
+    height: 36px;
+  }
 }

@@ -1,46 +1,111 @@
-.add{
-    width: 70%;
-    margin-left: max(5vw,25px);
-    margin-top: 50px;
-    color: #6d6d6d;
-    font-size: 16px;
+.add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: #4a4a4a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #f9fff9;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(39, 174, 96, 0.1);
+  transition: box-shadow 0.3s ease;
 }
- .add form{
-    gap: 20px;
- }
 
- .flex-col{
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
- }
+.add:hover {
+  box-shadow: 0 12px 28px rgba(39, 174, 96, 0.2);
+}
 
- .add-img-upload img{
-    width: 120px;
- }
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
- .add-product-name, .add-product-description{
-    width: max(40%,280px);
- }
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
- .add-product-name input, .add-product-description textarea{
-    padding: 10px;
- }
+.add-img-upload img {
+  width: 130px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 
- .add-category-price{
-    display: flex;
-    gap: 30px;
- }
- 
- .add-category-price select, .add-category-price input{
-    max-width: 120px;
-    padding: 10px;
- }
- .add-btn{
-    max-width: 120px;
-    border: none;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
- }
+.add-img-upload img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.3);
+}
+
+.add-product-name,
+.add-product-description {
+  width: max(40%, 280px);
+}
+
+.add-product-name input,
+.add-product-description textarea {
+  padding: 14px 15px;
+  border: 2px solid #27ae60;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus {
+  border-color: #34a853;
+  box-shadow: 0 0 8px #34a853aa;
+  outline: none;
+}
+
+.add-category-price {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.add-category-price select,
+.add-category-price input {
+  max-width: 140px;
+  padding: 12px 15px;
+  border: 2px solid #27ae60;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-category-price select:focus,
+.add-category-price input:focus {
+  border-color: #34a853;
+  box-shadow: 0 0 8px #34a853aa;
+  outline: none;
+}
+
+.add-btn {
+  max-width: 140px;
+  border: none;
+  padding: 14px 0;
+  background: linear-gradient(135deg, #34a853, #27ae60);
+  color: white;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px #27ae60cc;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.add-btn:hover {
+  box-shadow: 0 8px 25px #34a853ee;
+  transform: scale(1.05);
+}

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
             <div className="footer-content-left">
                 <img src={assets.logo} alt="" />
-                <p>hi hiruni wijerathna</p>
+                <p>YummyJet</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />
@@ -27,14 +27,14 @@ const Footer = () => {
             <div className="footer-content-right">
                 <h2>GET IN TOUCH</h2>
                 <ul>
-                    <li>070 2555944</li>
-                    <li>hiruniwijerathna7@gmail.com</li>
+                    <li>+94 58965478</li>
+                    <li>YummyJet@gmail.com</li>
                 </ul>
             </div>
 
         </div>
       <hr/>
-      <p className='footer-copyright'>Copyright 2024 @ Tomato.com - All Right Reserved.</p>
+      <p className='footer-copyright'>Copyright 2025 @ YummyJet.com - All Right Reserved.</p>
     </div>
   )
 }

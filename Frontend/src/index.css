@@ -5,10 +5,14 @@
   box-sizing: border-box;
   font-family: Outfit;
   scroll-behavior: smooth;
+  
 }
 
 body{
   min-height: 100vh;
+  
+  background-color: #e6f7ec;
+
 }
 
 a{
