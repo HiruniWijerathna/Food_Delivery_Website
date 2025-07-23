@@ -23,4 +23,4 @@ YummyJet is a full-stack food delivery web application built using the MERN stac
 
 ## 🎥 Demo Video
 
-📺 [Watch the Demo]([https://your-demo-video-link.com](https://drive.google.com/file/d/1ZKhx51P6udbiZobr4DPoTtb8zwKSDktQ/view?usp=drive_link))
+📺 [Watch the Demo](https://drive.google.com/file/d/1ZKhx51P6udbiZobr4DPoTtb8zwKSDktQ/view?usp=drive_link)
