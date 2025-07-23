@@ -1,4 +1,4 @@
-# 🍽️ YummyJet – Full-Stack Food Delivery App
+# 🍽️ YummyJet – Full-Stack Food Ordering Website
 
 <p align="center">
   <img src="10.png" alt="yammyjet" width="100%" />
@@ -11,7 +11,6 @@ YummyJet is a full-stack food delivery web application built using the MERN stac
 - **Frontend:** React.js  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB  
-- **Payment Integration:** Stripe
 
 ## ✨ Features
 
